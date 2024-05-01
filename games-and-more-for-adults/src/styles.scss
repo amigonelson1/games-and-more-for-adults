@@ -1,14 +1,14 @@
-.home-background {
+body {
     position: relative;
-    width: 100%;
+    margin-top:50px;
     height: 120vh;
     background-image: url('./assets/img/background-image1.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center top; 
     background-attachment: fixed;
   }
 
-  .footer {
+  footer {
     background-color: black; /* Fondo negro */
     color: white; /* Color del texto */
     padding: 20px; /* Espaciado interno */
