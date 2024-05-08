@@ -1,6 +1,14 @@
 <div class="fondo-difuminado">
 </div>
-<!-- <div class="contenido">
-    <h1>Contenido Principal</h1>
-    <p>Este es el contenido principal que estará sobre el fondo difuminado.</p>
-</div> -->
+<div class="contenido">
+    <h1>¡Atención!</h1>
+    <p>Este sitio web está diseñado para adultos y puede contener material sexualmente explícito. Por favor, confirma
+        que tienes al menos 18 años de edad para continuar explorando nuestro catálogo..</p>
+
+    <label for="acceptAge">Soy mayor de edad</label>
+    <p-checkbox class="ml-2" name="acceptAge" [binary]="true" [(ngModel)]="acceptAge" />
+    <div class="mt-4">
+        <button pButton pRipple label="Ver contenido" class="p-button-success" [disabled]="!acceptAge"
+            (click)="redirectHome()"></button>
+    </div>
+</div>
