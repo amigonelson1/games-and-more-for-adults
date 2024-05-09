@@ -1,21 +1,14 @@
+@import "primeicons/primeicons.css";
 
 body {
     position: relative;
-    margin-top:50px;
-    height: 120vh;
+    // top:50px;
+    // height: 120vh;
     background-image: url('./assets/img/background-image1.jpg');
     background-size: cover;
-    background-position: center top; 
+    // background-position: center top; 
     background-attachment: fixed;
-  }
-
-  footer {
-    background-color: black; /* Fondo negro */
-    color: white; /* Color del texto */
-    padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alineación del texto al centro */
-    width: calc(100% - 40px); /* Ancho igual al 100% del contenedor menos el padding izquierdo y derecho */
-    box-sizing: border-box; /* Incluye el padding en el ancho */
-    position: absolute; /* Coloca el footer en una posición absoluta */
-    bottom: 0; /* Coloca el footer al final */
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
   }
