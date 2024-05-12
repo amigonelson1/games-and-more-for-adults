@@ -1,9 +1,9 @@
-.informacion{
-  width: 100%;
-  height: 45px;
+.informacion {
   background-color: rgb(252, 49, 191);
 }
 
-.contenedorImgs{
-  padding: 10px;
+@media screen and (max-width: 768px){
+  .informacion {
+    padding: 8px;
+  }
 }
