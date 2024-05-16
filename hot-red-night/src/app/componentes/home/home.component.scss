@@ -1,9 +1,20 @@
 .informacion {
   background-color: rgb(252, 49, 191);
+  // max-width: 100%;
 }
 
-@media screen and (max-width: 768px){
-  .informacion {
-    padding: 8px;
+.anchoAuxiliar{
+  width: 200px;
+}
+
+@media screen and (max-width: 455px){
+  .anchoAuxiliar{
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 340px){
+  .anchoAuxiliar{
+    width: 0px;
   }
 }
