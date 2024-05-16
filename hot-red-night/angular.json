@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/juegos-para-adultos/browser",
+            "outputPath": "dist/juegos-para-adultos",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
