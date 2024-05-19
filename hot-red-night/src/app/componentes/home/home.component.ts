@@ -6,6 +6,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { InputTextModule } from 'primeng/inputtext';
 import { CommonModule } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -18,20 +19,59 @@ export class HomeComponent {
 
   items: MenuItem[] | undefined;
 
+  constructor(private router: Router) { }
+
   ngOnInit() {
     this.items = [
       {
-        label: 'Juguetes',
-        // icon: 'pi pi-face-smile',
+        label: 'Estimulantes/lubricantes',
         items: [
           {
             label: 'Para ella',
             icon: 'pi pi-venus',
-            // shortcut: '⌘+S'
+            command: () => {
+              this.router.navigate(['home/estimulantes-ellas']);
+            }
           },
           {
             label: 'Para el',
             icon: 'pi pi-mars',
+            command: () => {
+              this.router.navigate(['home/estimulantes-ellos']);
+            }
+          },
+          {
+            label: 'Para los dos',
+            icon: 'pi pi-heart',
+            command: () => {
+              this.router.navigate(['home/estimulantes']);
+            }
+          }
+        ]
+      },
+      {
+        label: 'Juguetes',
+        items: [
+          {
+            label: 'Para ella',
+            icon: 'pi pi-venus',
+            command: () => {
+              this.router.navigate(['home/juguetes-ellas']);
+            }
+          },
+          {
+            label: 'Para el',
+            icon: 'pi pi-mars',
+            command: () => {
+              this.router.navigate(['home/juguetes-ellos']);
+            }
+          },
+          {
+            label: 'Para los dos',
+            icon: 'pi pi-heart',
+            command: () => {
+              this.router.navigate(['home/juguetes']);
+            }
           }
         ]
       },
@@ -41,40 +81,31 @@ export class HomeComponent {
           {
             label: 'Para ella',
             icon: 'pi pi-venus',
+            command: () => {
+              this.router.navigate(['home/lenceria-ellas']);
+            }
           },
           {
             label: 'Para el',
             icon: 'pi pi-mars',
-          }
-        ]
-      },
-      {
-        label: 'Estimulantes',
-        items: [
-          {
-            label: 'Para ella',
-            icon: 'pi pi-venus',
+            command: () => {
+              this.router.navigate(['home/lenceria-ellos']);
+            }
           },
           {
-            label: 'Para el',
-            icon: 'pi pi-mars',
-          }
-        ]
-      },
-      {
-        label: 'Lubricantes',
-        items: [
-          {
-            label: 'Para ella',
-            icon: 'pi pi-venus',
-          },
-          {
-            label: 'Para el',
-            icon: 'pi pi-mars',
+            label: 'Para los dos',
+            icon: 'pi pi-heart',
+            command: () => {
+              this.router.navigate(['home/lenceria']);
+            }
           }
         ]
       }
     ];
+  }
+
+  redirecTo(rute: string) {
+    this.router.navigate([rute]);
   }
 
 }

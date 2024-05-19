@@ -3,18 +3,28 @@
   // max-width: 100%;
 }
 
-.anchoAuxiliar{
+.anchoAuxiliar {
   width: 200px;
 }
 
-@media screen and (max-width: 455px){
-  .anchoAuxiliar{
+@media screen and (max-width: 490px) {
+  .anchoAuxiliar {
     width: 100px;
   }
 }
 
-@media screen and (max-width: 340px){
-  .anchoAuxiliar{
+@media screen and (max-width: 388px) {
+  .anchoAuxiliar {
     width: 0px;
   }
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  z-index: 1000;
 }

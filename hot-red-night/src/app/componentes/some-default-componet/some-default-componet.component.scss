@@ -1,0 +1,24 @@
+.contenedorTitle {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);  
+    font-size: 20px; 
+}
+
+.contenedorParrafo{
+    padding: 0% 10% 5% 10%;
+    color: aliceblue;
+    font-size: 18px;
+    align-items: center;
+    text-align: justify; 
+}
+
+@media screen and (max-width: 550px){
+    .contenedorTitle{
+        font-size: 16px;
+    }
+
+    .contenedorParrafo{
+        font-size: 15px;
+      }
+  }

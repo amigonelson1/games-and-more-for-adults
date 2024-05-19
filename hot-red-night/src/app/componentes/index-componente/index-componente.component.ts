@@ -20,7 +20,6 @@ export class IndexComponenteComponent {
   acceptAge:boolean = false;
 
   redirectHome(){
-    console.log('clic en la funcion')
     this.router.navigate(['home']);
   }
 

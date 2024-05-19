@@ -12,3 +12,34 @@ body {
     padding: 0;
     // box-sizing: border-box;
   }
+
+  .contenedores{
+    width: 80%;
+    margin: 200px auto 10% auto ;
+    padding: 2%;
+    overflow-x: auto;
+    // background-color: rgb(252, 49, 191)
+    // background-color: rgb(199, 0, 57)
+    background-color: rgb(255, 241, 249)
+  }
+
+  @media screen and (max-width: 750px){
+    .contenedores{
+      width: 90%;
+    }
+  }
+
+  .contenedorHome{
+    width: 80%;
+    margin: 200px auto 10% auto ;
+    padding: 2%;
+    overflow-x: auto;
+    // background-color: rgb(252, 49, 191)
+    background-color: rgb(0, 0, 0)
+  }
+
+  @media screen and (max-width: 750px){
+    .contenedorHome{
+      width: 90%;
+    }
+  }
